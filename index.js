@@ -40,7 +40,7 @@ $("#okbtn").click(function(){
 			$("#convresult").text(moneyval / usd / 1.15)
 		}
 		if (moneys2 == "UAH"){
-			$("#convresult").text(moneyval * uah)
+			$("#convresult").text(moneyval / uah)
 		}
 	}
 	if (moneys1 == "UEP"){
