@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SU money converter</title>
+		<meta charset="UTF-8">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet"> 
+		<style>
+			body{
+				text-align:center;
+				margin-top: 10%;
+				font-family:'Cuprum';
+			}
+			h1{
+				font-family:'Fira Sans Condensed';
+			}
+			#okbtn{
+				background-color:white;
+				border-color:gray;
+				border-style:solid;
+				border-radius:32px;
+			}
+			#okbtn:hover{
+				background-color:gray;
+			}
+			#okbtn:active{
+				margin-left:1px;
+				margin-top:1px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="SUflag.png">
+		<h1>South Utochkia Money Converter</h1>
+		<p>Конвертировать из 
+			<select id="moneys1">
+				<option>RUB</option>
+				<option>USD</option>
+				<option>UEP</option>
+				<option>UAH</option>
+			</select>
+			<input id="moneyval">
+			в
+			<select id="moneys2">
+				<option>RUB</option>
+				<option>USD</option>
+				<option>UEP</option>
+				<option>UAH</option>
+			</select> 
+		</p>
+		<input id="okbtn" type="button" value="Конвертировать">
+		<p id="convresult"></p>
+		<script src="index.js"></script>
+	</body>
+</html>
