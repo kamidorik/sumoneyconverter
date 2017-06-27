@@ -15,18 +15,16 @@ $("#okbtn").click(function(){
 	var moneyval = $("#moneyval").val();
 	if (moneys1 == "USD"){
 		if (moneys2 == "RUB"){
-			console.log(moneyval + " and " + usd)
-			$("#convresult").text(moneyval * usd)
+			$("#convresult").text(Math.ceil((moneyval * usd)*100)/100)
 		}
 		if (moneys2 == "UEP"){
-			console.log(moneyval + " and " + uep)
-			$("#convresult").text(1.15 * moneyval)
+			$("#convresult").text(Math.ceil((1.15 * moneyval)*100)/100)
 		}
 		if (moneys2 == "USD"){
 			$("#convresult").text(moneyval)
 		}
 		if (moneys2 == "UAH"){
-			$("#convresult").text(moneyval * usd / uah)
+			$("#convresult").text(Math.ceil((moneyval * usd / uah)*100)/100)
 		}
 	}
 	if (moneys1 == "RUB"){
@@ -34,13 +32,13 @@ $("#okbtn").click(function(){
 			$("#convresult").text(moneyval)
 		}
 		if (moneys2 == "USD"){
-			$("#convresult").text(moneyval / usd)
+			$("#convresult").text(Math.ceil((moneyval / usd)*100)/100)
 		}
 		if (moneys2 == "UEP"){
-			$("#convresult").text(moneyval / usd * 1.15)
+			$("#convresult").text(Math.ceil((moneyval / usd / 1.15)*100)/100)
 		}
 		if (moneys2 == "UAH"){
-			$("#convresult").text(moneyval / uah)
+			$("#convresult").text(Math.ceil((moneyval * uah)*100)/100)
 		}
 	}
 	if (moneys1 == "UEP"){
@@ -48,13 +46,13 @@ $("#okbtn").click(function(){
 			$("#convresult").text(moneyval)
 		}
 		if (moneys2 == "RUB"){
-			$("#convresult").text(moneyval * usd / 1.15)
+			$("#convresult").text(Math.ceil((moneyval * usd / 1.15)*100)/100)
 		}
 		if (moneys2 == "USD"){
-			$("#convresult").text(moneyval / 1.15)
+			$("#convresult").text(Math.ceil((moneyval / 1.15)*100)/100)
 		}
 		if (moneys2 == "UAH"){
-			$("#convresult").text(moneyval * usd / 1.15 / uah)
+			$("#convresult").text(Math.ceil((moneyval * usd / 1.15 / uah)*100)/100)
 		}
 	}
 	if (moneys1 == "UAH"){
@@ -62,13 +60,13 @@ $("#okbtn").click(function(){
 			$("#convresult").text(moneyval)
 		}
 		if (moneys2 == "RUB"){
-			$("#convresult").text(moneyval * uah)
+			$("#convresult").text(Math.ceil((moneyval * uah)*100)/100)
 		}
 		if (moneys2 == "USD"){
-			$("#convresult").text(moneyval / usd * uah) 
+			$("#convresult").text(Math.ceil((moneyval / usd * uah)*100)/100) 
 		}
 		if (moneys2 == "UEP"){
-			$("#convresult").text(moneyval / usd / 1.15 * uah)
+			$("#convresult").text(Math.ceil((moneyval / usd / 1.15 * uah)*100)/100)
 		}
 	}
 });
